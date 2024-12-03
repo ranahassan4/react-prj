@@ -1,0 +1,33 @@
+  INSERT INTO products (name, price, discount, image, category) 
+VALUES
+( 'necklace1', 3500.00, 20.00, 'C:/xampp/htdocs/webadvRana/src/assets/ProductImages/nickles/nickles1.jpg', 'necklace'),
+('bracelet1', 2800.00, 18.00, 'C:/xampp/htdocs/webadvRana/src/assets/ProductImages/Bracelets/bracelets.jpg', 'bracelet'),
+('solitaire ring1', 7500.00, 25.00, 'C:/xampp/htdocs/webadvRana/src/assets/ProductImages/solitar/ring10.jpg', 'solitaire'),
+('wedding ring1', 5000.00, 20.00, 'C:/xampp/htdocs/webadvRana/src/assets/ProductImages/weddingRings/weddingRing.jpg','wedding ring'),
+
+
+
+
+
+INSERT INTO products ( name, price, discount, image, category) VALUES
+( ' weddingr', 4000.00, 20.00, 'weddr/weddingring1.jpg', 'wedding ring'),
+( 'weddingr', 4500.00, 15.00, 'weddr/weddingring2.jpg', 'wedding ring'),
+( 'solitaire ', 5000.00, 10.00, 'solitair/solitair1', 'solitair ring'),
+( 'solitaire', 5500.00, 25.00, 'solitair/solitair3.jpg', ' ring'),
+( 'solitaire', 6000.00, 30.00, 'solitair/solitair4.jpg', 'solitair ring'),
+( 'necklace', 3500.00, 20.00, 'nickles/nickles1.jpg', 'nickles ring'),
+( 'necklace', 3000.00, 15.00, 'nickles/nickles2.jpg', 'nickles ring'),
+( 'necklace', 4000.00, 10.00, 'nickles/nickles3.jpg', 'nickles ring'),
+( 'necklace', 4500.00, 5.00, 'nickles/nickles4.jpg', 'nickles ring'),
+( 'necklace', 5000.00, 30.00, 'nickles/nickles5.jpg', 'nickles ring'),
+( 'bracelet', 2500.00, 20.00, 'percides/bracelet2.jpg', 'bracelet'),
+( 'bracelet', 2800.00, 18.00, 'bracelet/bracelet1.jpg', 'bracelet'),
+( 'bracelet', 3000.00, 15.00, 'bracelet/bracelet3.jpg', 'bracelet'),
+( 'bracelet', 3200.00, 12.00, 'bracelet/bracelet4.jpg', 'bracelet'),
+( 'bracelet', 3500.00, 10.00, 'bracelet/bracelet5.jpg', 'bracelet'),
+( 'twodiamond ring', 7500.00, 25.00, 'twodiamond/tdiamond1.jpg', 'two diamond'),
+( 'twodiamond ring', 8000.00, 30.00, 'twodiamond/tdiamond2.jpg', 'two diamond'),
+( 'twodiamond ring', 8500.00, 20.00, 'twodiamond/tdiamond3.jpg', 'two diamond'),
+( 'twodiamond ring', 9000.00, 15.00, 'twodiamond/tdiamond4.jpg', 'two diamond'),
+( 'twodiamond ring', 9500.00, 10.00, 'twodiamond/tdiamond5.jpg', 'two diamond'),
+( 'solitaire ', 5000.00, 10.00, 'solitair/solitair5', 'solitair ring'),       (44, 'solitaire ', 5000.00, 10.00, 'solitair/solitair2', 'solitair ring'),                                                                                                (45 'weddingr', 4500.00, 15.00, 'weddr/weddingring3.jpg', 'wedding ring'),     (46 'weddingr', 4500.00, 15.00, 'weddr/weddingring4.jpg', 'wedding ring'), (47 'weddingr', 4500.00, 15.00, 'weddr/weddingring5.jpg', 'wedding ring'),
