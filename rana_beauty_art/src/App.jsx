@@ -12,20 +12,21 @@ import Dashboard from "./Dashboardpages/Dashboard"; // AA
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Shop" element={<Shop />} />
-        <Route path="/Signin_up" element={<Signin_up isModal />} />
-        <Route path="/Products" element={<ProductPage />} />
-        <Route path="/Cart" element={<Cart isModal />} />
-        <Route path="/Product-Create" element={<ProdCreate />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/DeliveryList" element={<DeliveryList />} />
-        <Route path="/ProductList" element={<ProductList />} />
-        {/* AA */}
-      </Routes>
-    </BrowserRouter>
+    <Home />
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<Home />} />
+    //     <Route path="/Shop" element={<Shop />} />
+    //     <Route path="/Signin_up" element={<Signin_up isModal />} />
+    //     <Route path="/Products" element={<ProductPage />} />
+    //     <Route path="/Cart" element={<Cart isModal />} />
+    //     <Route path="/Product-Create" element={<ProdCreate />} />
+    //     <Route path="/Dashboard" element={<Dashboard />} />
+    //     <Route path="/DeliveryList" element={<DeliveryList />} />
+    //     <Route path="/ProductList" element={<ProductList />} />
+    //     {/* AA */}
+    //   </Routes>
+    // </BrowserRouter>
   );
 };
 

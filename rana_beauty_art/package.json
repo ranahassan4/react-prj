@@ -1,5 +1,5 @@
 {
-  "name": "rana_beauty_art",
+  "name": "beauty_art",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass-dev": "sass --watch --update --style=expanded src/SCSS:src/CSS"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
