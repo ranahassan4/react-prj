@@ -1,0 +1,62 @@
+.rings-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  .rings {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+
+    .carousel-item {
+      position: fixed;
+      top: 0;
+
+      transition: left 0.5s ease-in-out;
+      width: 100%;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    .carousel-item.active {
+      left: 0;
+      opacity: 1;
+      z-index: 10;
+    }
+
+    .carousel-item.prev {
+      left: -100%;
+    }
+
+    .carousel-item.next {
+      left: 100%;
+    }
+
+    button.move-left,
+    button.move-right {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      font-size: 2rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    button.move-left {
+      left: 10px;
+    }
+
+    button.move-right {
+      right: 10px;
+    }
+  }
+}
