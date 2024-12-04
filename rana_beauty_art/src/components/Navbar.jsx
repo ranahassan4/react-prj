@@ -23,10 +23,11 @@ const Navbar = () => {
         </div>
 
         <div className="nav-links">
-          <Link to="/shop">Shop</Link>
-          <Link to="/women">New</Link>
-          <Link to="/kids">Trend</Link>
-          <Link to="/sale">Sale</Link>
+          <Link to="/shop">Necklace</Link>
+          <Link to="/women">bracelet</Link>
+          <Link to="/kids">Solitair Ring</Link>
+          <Link to="/sale">wedding Ring</Link>
+          <Link to="/sale">twodiamond Ring</Link>
         </div>
 
         <div className="nav-actions">
