@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
 import "../CSS/Home.CSS";
-
+import Navbar from "../components/Navbar";
 import homImage from "../assets/hom.jpg";
 import solitaireImage from "../assets/solitair.jpg";
 import weddingImage from "../assets/wed.jpg";
@@ -52,6 +52,7 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar />
       {/* Hero Section */}
       <div className="image-section">
         <img

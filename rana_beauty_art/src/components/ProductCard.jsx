@@ -14,19 +14,19 @@ export default function ProductCard({ product }) {
         </Link>
       </div>
       <div className="product-info">
-        <span className="category">{product.clothesCategories}</span>
+        <span className="category">{product.category}</span>
         <h3 className="name">{product.name}</h3>
         <p className="price">
-          {product.salePrice ? (
+          {product.discount ? (
             <>
-              <span className="original-price">${product.originalPrice}</span>
-              <span className="sale-price">${product.salePrice}</span>
+              <span className="original-price">${product.price}</span>
+              <span className="sale-price">${product.discount}</span>
             </>
           ) : (
             `$${product.price}`
           )}
         </p>
-        <p className="about">{product.about}</p>
+
         <button className="actions">
           <p className="wishlist">♥</p>
         </button>
