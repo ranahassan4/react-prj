@@ -1,14 +1,3 @@
-.announcement-bar {
-  background-color: black; /* Light festive background */
-  color: #d0021b; /* Festive red color */
-  text-align: center;
-  padding: 10px 0; /* Slight padding */
-  font-size: 16px; /* Text size */
-  font-weight: bold; /* Highlight text */
-}
-.announcement-bar + .navbar {
-  margin-top: 0;
-}
 a {
   font-weight: bold;
 }
@@ -102,8 +91,8 @@ a {
     height: 80px;
   }
   .navbar .nav-links {
-    grid-row: 2/3;
-    grid-column: 1/-1;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
     width: 100%;
     justify-content: space-around;
   }
@@ -128,6 +117,7 @@ a {
     width: auto;
   }
 }
+
 @media (max-width: 640px) {
   .navbar {
     display: grid;
@@ -168,5 +158,3 @@ a {
     font-size: 1.44rem;
   }
 }
-
-/*# sourceMappingURL=Navbar.css.map */
