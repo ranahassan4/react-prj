@@ -95,7 +95,7 @@ const ProductList = () => {
               <span className="type">ID</span> {product.id}
             </span>
             <span>
-              <span className="type">Category</span> {product.clothesCategory}
+              <span className="type">Category</span> {product.category}
             </span>
             <span>
               <span className="type">Size</span> {product.availableSizes}
