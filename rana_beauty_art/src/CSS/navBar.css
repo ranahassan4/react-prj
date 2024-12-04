@@ -1,7 +1,3 @@
-/* Announcement Bar */
-
-/* Remove spacing between the announcement bar and the nav bar */
-
 a {
   font-weight: bold;
 }
@@ -15,38 +11,46 @@ a {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
 }
+
 .navbar .logo img {
   height: 25px;
   width: auto;
 }
+
 .navbar .nav-links {
   display: flex;
   width: 35%;
   justify-content: space-between;
   align-items: center;
 }
+
 .navbar .nav-links li {
   margin: 0;
 }
+
 .navbar .nav-links a {
   text-decoration: none;
   font-size: 1.76rem;
   color: #555;
   transition: color 0.3s;
 }
+
 .navbar .nav-links a:hover {
   color: #ff6347;
 }
+
 .navbar .nav-actions {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: right;
 }
+
 .navbar .nav-actions img {
   object-fit: contain;
   width: 3rem;
 }
+
 .navbar .nav-actions .search-bar {
   padding: 5px 10px;
   font-size: 1.6rem;
@@ -55,10 +59,12 @@ a {
   width: 60%;
   height: 30px;
 }
+
 .navbar .nav-actions .search-bar:focus {
   border-color: #ff6347;
   outline: none;
 }
+
 .navbar .nav-actions .cart-button {
   font-size: 1.92rem;
   background-color: #ff6347;
@@ -69,6 +75,7 @@ a {
   border-bottom-left-radius: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
+
 .navbar .nav-actions .cart-button:hover {
   background-color: black;
   color: #fff;
