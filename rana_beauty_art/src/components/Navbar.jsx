@@ -1,5 +1,3 @@
-// import "../CSS/Navbar.css";
-
 import { Link } from "react-router-dom";
 import "../CSS/navBar.css";
 import logo from "../assets/ahmad/logo.png";
@@ -43,7 +41,7 @@ const Navbar = () => {
           />
 
           <Link to="/Cart" className="cart-button">
-            Cart 🛒
+            <span> Cart </span> 🛒
           </Link>
         </div>
       </nav>

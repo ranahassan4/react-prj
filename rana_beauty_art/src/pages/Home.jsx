@@ -61,6 +61,7 @@ const Home = () => {
           src={homImage}
           alt="Diamond Background"
         />
+
         <div className="image-overlay">
           <h1>Welcome to Rana Store</h1>
           <p>
