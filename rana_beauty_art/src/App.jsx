@@ -3,7 +3,7 @@ import "./CSS/navBar.css";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import ProductPage from "./pages/Product";
-import ProductList from "./pages/ProductList";
+import ProductList from "./Dashboardpages/ProductList";
 import Cart from "./components/Cart";
 import Rings from "./components/Rings";
 import Signin_up from "./components/Signin_up";

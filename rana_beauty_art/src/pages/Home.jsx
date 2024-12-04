@@ -1,9 +1,12 @@
 // import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+
 import { useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
 import "../CSS/Home.CSS";
 import Navbar from "../components/Navbar";
+import Rings from "../components/Rings";
 import homImage from "../assets/hom.jpg";
 import solitaireImage from "../assets/solitair.jpg";
 import weddingImage from "../assets/wed.jpg";
@@ -11,7 +14,7 @@ import diamondImage from "../assets/2Diam.jpg";
 import necklaceImage from "../assets/ProductImages/necklace/nickles1.jpg";
 import PiercingImage from "../assets/ProductImages/bracelet/bracelet1.jpg";
 import whatsappIcon from "../assets/whicon.gif";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { Links, useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Home = () => {
   const textSection = useRef(null);
@@ -121,83 +124,6 @@ const Home = () => {
             aria-label="Slide 3"
           ></a>
         </div>
-
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img
-              src={solitaireImage}
-              className="d-block carousel-img mx-auto"
-              alt="Solitaire Rings"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Solitaire Rings</h5>
-              <a
-                href="http://localhost:8000/solitaire.php"
-                className="btn btn-primary no-underline"
-              >
-                Shop Now
-              </a>
-            </div>
-          </div>
-
-          <div className="carousel-item">
-            <img
-              src={weddingImage}
-              className="d-block carousel-img mx-auto"
-              alt="Wedding Rings"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Wedding Rings</h5>
-              <a
-                href="http://localhost:8000/weddr.php"
-                className="btn btn-primary no-underline"
-              >
-                Discover It
-              </a>
-            </div>
-          </div>
-
-          <div className="carousel-item">
-            <img
-              src={diamondImage}
-              className="d-block carousel-img mx-auto"
-              alt="2 Diamond Rings"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>2 Diamond Rings</h5>
-              <a
-                href="http://localhost:8000/twodiam.php"
-                className="btn btn-primary no-underline"
-              >
-                Explore more
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <button
-          className="carousel-control-prev"
-          type="button"
-          onClick={handlePrevClick} // Navigate to the previous page
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-
-        <button
-          className="carousel-control-next"
-          type="button"
-          onClick={handleNextClick} // Navigate to the next page
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
 
       {/* Necklace Section */}
@@ -213,15 +139,17 @@ const Home = () => {
           <img src={necklaceImage} alt="Shop Now" className="shop-now-image" />
           <div className="shop-now-overlay">
             <h3>Update Your Look</h3>
-            <a
-              href="http://localhost:8000/shopnow.php"
+            <Link
+              to={`/shop?categories=${"necklace"}`}
               className="btn btn-primary no-underline"
             >
               Shop Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>
+
+      <Rings />
 
       {/* Piercing Section */}
       <div className="piercing-section">
@@ -231,19 +159,23 @@ const Home = () => {
             Elevate your style with our unique collection of piercings. Each
             piece is crafted with precision and designed to make a statement.
           </p>
-          <div ref={piercingImage} className="piercing-image-container">
-            <img
-              src={PiercingImage}
-              alt="Piercing Collection"
-              className="piercing-image"
-            />
-            <button></button>{" "}
-            <a
-              href="http://localhost:8000/piercings.php"
-              className="btn btn-primary no-underline"
-            >
-              Show More
-            </a>
+          <div className="shop-now-section">
+            <div ref={shopNowImage} className="shop-now-container">
+              <img
+                src={necklaceImage}
+                alt="Shop Now"
+                className="shop-now-image"
+              />
+              <div className="shop-now-overlay">
+                <h3>Update Your Look</h3>
+                <Link
+                  to={`/shop?categories=${"bracelet"}`}
+                  className="btn btn-primary no-underline"
+                >
+                  Shop Now
+                </Link>
+              </div>
+            </div>
           </div>
           <br></br>
         </div>

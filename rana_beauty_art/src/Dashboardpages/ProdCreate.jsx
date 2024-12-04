@@ -1,5 +1,35 @@
 import "../CSS/ProdCreate.css";
+import React, { useState } from "react";
 export default function ProdCreate() {
+  const [name, setName] = useState("");
+  // const [a, seta] = useState("");
+  // const [3, set3] = useState("");
+  // const [4, set4] = useState("");
+  // const [5, set5] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("a", a);
+    formData.append("3", 3);
+    formData.append("4", 4);
+    formData.append("5", 5);
+
+    fetch("process.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+
   return (
     <div className="ProdCreatePage">
       <div className="content">
@@ -7,11 +37,19 @@ export default function ProdCreate() {
         <div className="flex Row1">
           <div className="flex-col">
             <h3>Name:</h3>
-            <input type="text" placeholder="Enter product Name" />
+            <input
+              type="text"
+              placeholder="Enter product Name"
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div className="flex-col">
             <h3>Description:</h3>
-            <input type="text" placeholder="Enter product Description" />
+            <input
+              type="text"
+              placeholder="Enter product Description"
+              onChange={(e) => seta(e.target.value)}
+            />
           </div>
           <div className="flex-col">
             <h3>Price:</h3>
