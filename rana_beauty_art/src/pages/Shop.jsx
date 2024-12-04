@@ -1,44 +1,46 @@
 import { useState, useEffect } from "react";
-import "../CSS/shopPage.css"; // Make sure this file exists
+import "../CSS/shopPage.css";
 import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
 
 export default function ShopPage() {
-  const [products, setProducts] = useState([]); // State for products
-  const [error, setError] = useState(null); // State for error handling
+  const [data, setData] = useState([]); // Store product data
+  const [error, setError] = useState(null); // Store error messages
 
   useEffect(() => {
-    // Fetch products from the backend
     fetch(
       "http://localhost/RanaHassan/react-prj/rana_beauty_art/backend/getMarriageRings.php"
     )
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Failed to fetch products");
+          throw new Error(`HTTP error! Status: ${response.status}`);
         }
         return response.json();
       })
-      .then((data) => setProducts(data)) // Store fetched products in state
-      .catch((error) => {
-        console.error("Error fetching products:", error);
-        setError(error.message); // Set error message
+      .then((data) => {
+        setData(data); // Store the data in state
+        setError(null); // Clear any previous errors
+      })
+      .catch((err) => {
+        console.error("Error fetching data:", err);
+        setError(err.message); // Store the error message
       });
   }, []);
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="shop-container">
         {error ? (
-          <p className="error-message">Error: {error}</p> // Display error if any
-        ) : products.length > 0 ? (
+          <p className="error-message">{error}</p>
+        ) : data.length > 0 ? (
           <div className="product-list">
-            {products.map((product) => (
+            {data.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
         ) : (
-          <p className="no-products-message">No products available.</p>
+          <p className="no-data-message">No products available.</p>
         )}
       </div>
     </>
