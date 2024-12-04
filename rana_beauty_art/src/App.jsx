@@ -9,7 +9,7 @@ import DeliveryList from "./components/DeliveryList";
 import Cart from "./components/Cart";
 import ProdCreate from "./Dashboardpages/ProdCreate"; // AA
 import Dashboard from "./Dashboardpages/Dashboard"; // AA
-cd;
+
 const App = () => {
   return (
     <BrowserRouter>
