@@ -5,7 +5,6 @@ export default function Dashboard() {
     <div>
       <Link to="/Product-Create">Create product</Link>
       <Link to="/ProductList">product table</Link>
-      <Link to="/DeliveryList">order table</Link>
     </div>
   );
 }

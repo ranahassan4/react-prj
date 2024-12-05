@@ -8,13 +8,10 @@ import "../CSS/Home.CSS";
 import Navbar from "../components/Navbar";
 import Rings from "../components/Rings";
 import homImage from "../assets/hom.jpg";
-import solitaireImage from "../assets/solitair.jpg";
-import weddingImage from "../assets/wed.jpg";
-import diamondImage from "../assets/2Diam.jpg";
 import necklaceImage from "../assets/ProductImages/necklace/nickles1.jpg";
 import PiercingImage from "../assets/ProductImages/bracelet/bracelet1.jpg";
 import whatsappIcon from "../assets/whicon.gif";
-import { Links, useNavigate } from "react-router-dom"; // Import useNavigate
+// Import useNavigate
 
 const Home = () => {
   const textSection = useRef(null);
@@ -22,8 +19,6 @@ const Home = () => {
   const necklaceText = useRef(null);
   const shopNowImage = useRef(null);
   const piercingImage = useRef(null);
-
-  const navigate = useNavigate(); // useNavigate hook for page navigation
 
   useEffect(() => {
     const textSection2 = textSection.current;
@@ -53,13 +48,6 @@ const Home = () => {
   }, []);
 
   // Function to navigate to a specific page
-  const handlePrevClick = () => {
-    navigate("/previouspage"); // Adjust to your desired route
-  };
-
-  const handleNextClick = () => {
-    navigate("/nextpage"); // Adjust to your desired route
-  };
 
   return (
     <div>
@@ -162,7 +150,7 @@ const Home = () => {
           <div className="shop-now-section">
             <div ref={shopNowImage} className="shop-now-container">
               <img
-                src={necklaceImage}
+                src={PiercingImage}
                 alt="Shop Now"
                 className="shop-now-image"
               />

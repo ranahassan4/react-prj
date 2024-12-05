@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 // import ImagesCard from "../components/ImagesCard";
 import "../CSS/Product.css";
-import MainImageSrc from "../assets/ahmad/productPage/mainImage.png";
-import Thumbnail1 from "../assets/ahmad/productPage/thumbnail-1.png";
-import Thumbnail2 from "../assets/ahmad/productPage/thumbnail-2.png";
-import Thumbnail3 from "../assets/ahmad/productPage/thumbnail-3.png";
-import MainImageSrc2 from "../assets/ahmad/productPage2/mainImage.png";
-import Thumbnail2_1 from "../assets/ahmad/productPage2/thumbnail-1.png";
-import Thumbnail2_2 from "../assets/ahmad/productPage2/thumbnail-2.png";
-import Thumbnail2_3 from "../assets/ahmad/productPage2/thumbnail-3.png";
+import MainImageSrc from "../assets/ah/productPage/mainImage.png";
+import Thumbnail1 from "../assets/ah/productPage/thumbnail-1.png";
+import Thumbnail2 from "../assets/ah/productPage/thumbnail-2.png";
+import Thumbnail3 from "../assets/ah/productPage/thumbnail-3.png";
+import MainImageSrc2 from "../assets/ah/productPage2/mainImage.png";
+import Thumbnail2_1 from "../assets/ah/productPage2/thumbnail-1.png";
+import Thumbnail2_2 from "../assets/ah/productPage2/thumbnail-2.png";
+import Thumbnail2_3 from "../assets/ah/productPage2/thumbnail-3.png";
 
 const ProductPage = () => {
   const ImagesInfo = [

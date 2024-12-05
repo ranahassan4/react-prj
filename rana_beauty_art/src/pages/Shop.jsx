@@ -11,7 +11,7 @@ export default function ShopPage() {
   // Fetch products
   useEffect(() => {
     fetch(
-      "http://localhost/RanaHassan/react-prj/rana_beauty_art/backend/getProducts.php"
+      "http://localhost/reactttwebprj/react-prj/rana_beauty_art/backend/getProducts.php"
     )
       .then((response) => {
         if (!response.ok) {
