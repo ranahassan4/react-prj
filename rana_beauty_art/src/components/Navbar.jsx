@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../CSS/navBar.css";
-import logo from "../assets/ahmad/logo.png";
+import logo from "../assets/necklace.gif";
 import user from "../assets/ahmad/User.svg";
 
 const Navbar = () => {
@@ -20,14 +20,15 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} alt="Logo" />
           </Link>
+          <h3>Rana Hassan</h3>
+          <h5>The art of beauty</h5>
         </div>
 
         <div className="nav-links">
-          <Link to="/shop">Necklace</Link>
-          <Link to="/women">bracelet</Link>
-          <Link to="/kids">Solitair Ring</Link>
-          <Link to="/sale">wedding Ring</Link>
-          <Link to="/sale">twodiamond Ring</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/women">Trend</Link>
+          <Link to="/kids">Seasons</Link>
+          <Link to="/sale">Focus</Link>
         </div>
 
         <div className="nav-actions">

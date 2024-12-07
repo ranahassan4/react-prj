@@ -1,71 +1,67 @@
 .announcement-bar {
-  background-color: #06732a; /* Light festive background */
-  color: #fdf9fa; /* Festive red color */
+  background-color: #06732a;
+  color: #fdf9fa;
   text-align: center;
-  padding: 7px 0; /* Slight padding */
-  font-size: 18px; /* Text size */
-  font-weight: bold; /* Highlight text */
-  position: fixed; /* Make it fixed at the top */
-  top: 0; /* Align it to the very top */
-  width: 100%; /* Full width */
-  z-index: 1000; /* Ensure it stays above other content */
+  padding: 7px 0;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
-/* Cart Button */
-/* Cart Button */
-/* Cart Button */
-/* Cart Button */
+
 .cart-button {
-  position: relative; /* Set position for layering */
+  position: relative;
   display: flex;
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-  background-color: transparent; /* Make background transparent */
-  border: none; /* Remove border */
-  text-decoration: none; /* Remove underline */
-  font-size: 12px; /* Optional: Text size adjustment */
-  cursor: pointer; /* Pointer on hover */
-  height: 40px; /* Adjust button height */
-  width: 40px; /* Adjust button width for a square shape */
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
 }
 
-/* Text Inside the Cart Button */
 .cart-button span {
-  position: absolute; /* Layer text */
-  z-index: 1; /* Place text behind the image */
-  color: transparent; /* Hide the text visually */
+  position: absolute;
+  z-index: 1;
+  color: transparent;
 }
 
-/* Icon Inside the Cart Button */
 .cart-button img {
-  z-index: 2; /* Place the image on top of the text */
-  height: 40px; /* Adjust icon size */
-  width: 40px; /* Adjust icon size */
+  z-index: 2;
+  height: 40px;
+  width: 40px;
   position: relative;
 }
-
-/* Hover Effect for Entire Button */
 .cart-button:hover {
-  transform: scale(1.1); /* Slight enlargement on hover */
-  transition: all 0.3s ease; /* Smooth transition effect */
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
-/* Navbar Actions Layout */
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 8px; /* Space between user icon, search bar, and cart button */
+  gap: 8px;
 }
 
 .navbar {
   background-color: #e7d5d5cf;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+
   padding: 8px 20px;
   position: fixed;
   top: 50px;
   width: 100%;
   z-index: 1034;
+  display: flex; /* Align logo and text in a row */
+  gap: 10px;
+  /* Add space between the logo and text */
+  position: relative;
 }
-.navbar-logo {
+/* .navbar-logo {
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   text-align: center;
@@ -74,8 +70,8 @@
   color: rgb(82, 183, 192);
   position: relative;
   font-style: italic;
-}
-.navbar-logo small {
+} */
+/* .navbar-logo small {
   display: block;
   font-size: 1rem;
   font-weight: 300;
@@ -92,7 +88,7 @@
   width: 50px;
   height: auto;
   margin-right: 8px;
-}
+} */
 .nav-icons {
   font-size: 1.5rem;
   margin-left: 15px;
@@ -117,6 +113,9 @@
   display: block;
   transition: transform 1s ease-in-out;
 }
+rings {
+  text-align: center;
+}
 
 .image-section img.zoom-out-image {
   transform: scale(1.5);
@@ -127,14 +126,9 @@
 }
 
 .image-overlay {
-  /* position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%); */
-
   color: #ffffff;
-  display: flex; /* Enable flexbox layout */
-  /* Align items vertically at the same level */
-  gap: 25px; /* Add spacing between the heading and paragraph */
+  display: flex;
+  gap: 25px;
 }
 .image-overlay h1 {
   padding-right: 12px;
@@ -175,9 +169,9 @@
 }
 
 .luxury-container {
-  display: flex; /* Enable flexbox layout */
-  align-items: center; /* Align items vertically at the same level */
-  gap: 20px; /* Add spacing between the heading and paragraph */
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .luxury-description {
   font-family: "Arial", sans-serif;
@@ -286,8 +280,6 @@
   max-width: 100%;
   border-radius: 10px;
 }
-
-/* WhatsApp Button */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -314,8 +306,6 @@
 .zoom-out-image.loaded {
   transform: scale(1);
 }
-
-/* Maximum animation for text and paragraph */
 .text-section {
   opacity: 0;
   transform: translateY(100px);
@@ -358,6 +348,7 @@ necklace-section {
   width: 80%;
   margin: 0 auto;
   max-width: 600px;
+  text-align: center;
 }
 
 .shop-now-image {
@@ -413,7 +404,6 @@ necklace-section {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: "Playfair Display", serif;
-  height: fit-content;
 }
 
 .piercing-title {
@@ -462,6 +452,13 @@ necklace-section {
   transition: background-color 0.3s ease;
 }
 
+h5,
+h3 {
+  font-style: italic;
+  color: #555;
+  display: flex;
+  flex-direction: column; /* Stack the text vertically */
+}
 .piercing-btn:hover {
   background-color: #c1a6c5;
 }

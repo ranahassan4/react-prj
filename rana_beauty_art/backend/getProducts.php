@@ -1,5 +1,5 @@
 <?php
-header('Access-Control-Allow-Origin: http://localhost:5173'); // Allow requests from React frontend
+header('Access-Control-Allow-Origin: http://localhost:5180'); // Allow requests from React frontend
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');  // Specify allowed HTTP methods
 header('Access-Control-Allow-Headers: Content-Type');        // Allow specific headers
 header('Access-Control-Allow-Credentials: true');
